@@ -9,6 +9,7 @@ public class Tickets implements Runnable {
     private int ticketsNum = 10;
 
 
+    @Override
     public void run() {
         while (true) {
             if (ticketsNum <= 0) {
@@ -23,5 +24,8 @@ public class Tickets implements Runnable {
         new Thread(tickets, "Bink").start();
         new Thread(tickets, "Bing").start();
         new Thread(tickets, "HN").start();
+        new Thread(() -> {
+            System.out.println("测试Lambda表达式！");
+        }).start();
     }
 }
