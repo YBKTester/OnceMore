@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lesson_01_DataType" />
+        <module name="Mybatis" />
         <module name="Thread" />
       </profile>
     </annotationProcessing>
